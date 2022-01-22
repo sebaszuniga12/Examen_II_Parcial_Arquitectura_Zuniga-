@@ -18,12 +18,27 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Document(collection = "curso")
 public class Curso {
+
     @Id
     private String id;
     private String codigo;
     private String area;
+    private String nombre;
     private Integer duracionHoras;
     private Date fechaInicio;
-    private Date fechaCreacion;
     private BigDecimal costo;
+
+    public Curso(String id, String codigo, String area, String nombre, Integer duracionHoras, Date fechaInicio, BigDecimal costo) {
+        this.id = id;
+        this.codigo = codigo;
+        this.area = area;
+        this.nombre = nombre;
+        this.duracionHoras = duracionHoras;
+        this.fechaInicio = fechaInicio;
+        this.costo = costo;
+    }
+
+    public Curso() {
+    }
+
 }

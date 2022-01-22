@@ -18,4 +18,19 @@ public class EstudianteRQ {
     private String correo;
     private String pais;
     private Date fechaNacimiento;
+
+    public EstudianteRQ(String nombre, String correo, String pais, Date fechaNacimiento) {
+        this.nombre = nombre;
+        this.correo = correo;
+        this.pais = pais;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public EstudianteRQ() {
+    }
+    
+    
+    
+    
+    
 }

@@ -26,4 +26,20 @@ public class Estudiante {
     private Date fechaNacimiento;
     private LocalDateTime fechaCreacion;
     private String estado;
+
+    public Estudiante(String id, String nombre, String correo, String pais, Date fechaNacimiento, LocalDateTime fechaCreacion, String estado) {
+        this.id = id;
+        this.nombre = nombre;
+        this.correo = correo;
+        this.pais = pais;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaCreacion = fechaCreacion;
+        this.estado = estado;
+    }
+
+    public Estudiante() {
+    }
+    
+    
+    
 }
