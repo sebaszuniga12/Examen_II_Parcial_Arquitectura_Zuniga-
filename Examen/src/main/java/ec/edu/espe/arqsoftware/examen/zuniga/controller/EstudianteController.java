@@ -62,13 +62,6 @@ public class EstudianteController {
                     .status(HttpStatus.NOT_FOUND)
                     .body("hola");
         }
-        /*
-            BadRequestRS<Cliente> response = new BadRequestRS<>();
-            response.setMessage("No fue posible crear el cliente con la información dada");
-            response.setPath("/v1/cliente");
-            response.setExceptionMessage(exceptionMessage);
-            response.setObject(cliente);
-         */
     }
 
 }

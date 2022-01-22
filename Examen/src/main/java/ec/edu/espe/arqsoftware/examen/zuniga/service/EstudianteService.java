@@ -35,7 +35,7 @@ public class EstudianteService {
             estudiante.setFechaCreacion(fecha);
             return this.estudianteRepository.save(estudiante);
         } else {
-            throw new RuntimeException("Its already in the database");
+            throw new RuntimeException("Ya existe en la base de datos");
         }
     }
 
