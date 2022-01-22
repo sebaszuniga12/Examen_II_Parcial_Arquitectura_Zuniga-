@@ -5,17 +5,14 @@
  */
 package ec.edu.espe.arqsoftware.examen.zuniga.dao;
 
-import ec.edu.espe.arqsoftware.examen.zuniga.model.Curso;
+import ec.edu.espe.arqsoftware.examen.zuniga.model.Matricula;
 import java.util.List;
-import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
  *
  * @author sebas
  */
-    public interface CursoRepository extends MongoRepository<Curso, String>{
-    
-    List<Curso> findByAreaAndNombreLike(String area, String nombre);
-    Optional<Curso> findByCodgio(String codigo);
+public interface MatriculaRepository extends MongoRepository<Matricula, String>{
+     List<Matricula> findByCorreoEstudiante(String correo) ;
 }
